@@ -31,6 +31,11 @@
 #include <gsl/gsl_linalg.h>
 #include <vector>
 
+// Overwrite std::abs if defined
+#ifdef _GLIBCXX_BITS_STD_ABS_H
+#define abs(x) stdAbs(x)
+#endif
+
 /**
 Graph class, it implements graph matching algorithms
 

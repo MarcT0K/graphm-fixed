@@ -40,6 +40,7 @@ if (&gh!=this)
 {
 	set_adjmatrix(gh.get_adjmatrix());
 }
+return *this;
 }
 //graph loading from txt file
 int graph::load_graph(std::string fgraph_name,char ftype,char cformat,std::string fvertexlst_name)
@@ -141,6 +142,7 @@ for (int i=0;i<gm_A->size1;i++)
 		fout<<" "<<gsl_matrix_get(gm_A,i,j);
 	fout<<std::endl;
 }
+return 0;
 }
 
 void graph::printdot(std::string fname_out,gsl_matrix* gm_P)

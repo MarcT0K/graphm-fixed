@@ -239,7 +239,9 @@ int rpc::printout(std::string fname_out)
 		fout<<std::endl;
 		vp_it++;
 	};
+        return 0;
 }
+
 std::string rpc::get_config_string()
 {
 	std::stringstream fout;
