@@ -32,5 +32,6 @@
 *.app
 
 # Others
-bin/graphm
+bin
+obj
 *.swp

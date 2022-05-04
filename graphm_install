@@ -1,5 +1,10 @@
 #!/bin/sh
 # GraphM package compilation.
+
+# Build directories
+mkdir bin
+mkdir obj
+
 if [ $# -eq 0 ]
 then
 echo "LP algorithm is not supported (default)"

@@ -26,7 +26,7 @@ Requirements:
 * GSL package
 
 ```bash
-sudo apt install libgsl-dev g++
+sudo apt install make build-essential libgsl-dev g++
 ```
 
 Install script:
